@@ -19,13 +19,13 @@ data "template_file" "hashiqube" {
   }
 }
 
-data "terraform_remote_state" "aws_core" {
+data "terraform_remote_state" "aws_sandbox" {
   backend = "remote"
   config = {
     hostname     = "app.terraform.io"
-    organization = "dotmatics"
+    organization = "sa-aws"
     workspaces = {
-      name = "aws-instance"
+      name = "aws-networking-sandbox-eu-west-2"
     }
   }
 }

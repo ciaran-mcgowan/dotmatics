@@ -1,10 +1,10 @@
 terraform {
   backend "remote" {
     hostname     = "app.terraform.io"
-    organization = "sa-aws"
+    organization = "dotmatics"
 
     workspaces {
-      name = "aws-hashiqube-eu-west-2"
+      name = "aws-instance"
     }
   }
   required_providers {
