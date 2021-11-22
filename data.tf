@@ -25,7 +25,7 @@ data "terraform_remote_state" "aws_core" {
     hostname     = "app.terraform.io"
     organization = "dotmatics"
     workspaces = {
-      name = "aws-networking-core-eu-west-2"
+      name = "aws-instance"
     }
   }
 }
