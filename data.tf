@@ -14,8 +14,8 @@ data "aws_ami" "ubuntu" {
 data "template_file" "hashiqube" {
   template = file("${path.module}/scripts/startup_script")
   vars = {
-    HASHIQUBE_AWS_IP   = aws_eip.hashiqube.public_ip
-    VAULT_ENABLED      = true
+    HASHIQUBE_AWS_IP = aws_eip.hashiqube.public_ip
+    VAULT_ENABLED    = true
   }
 }
 

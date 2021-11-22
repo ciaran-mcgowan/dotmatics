@@ -1,5 +1,5 @@
 resource "aws_security_group" "hashiqube" {
-  name = "hashiqube"
+  name   = "hashiqube"
   vpc_id = data.terraform_remote_state.aws_core.outputs.vpc_id
   ingress {
     from_port   = 0

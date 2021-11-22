@@ -35,10 +35,14 @@ variable "aws_instance_type" {
 }
 
 variable "number_of_instances" {
-  type        = string
-  default     = "1"
+  type    = string
+  default = "1"
 }
 
+variable "region" {
+  type    = string
+  default = "eu-west-1"
+}
 
 
 

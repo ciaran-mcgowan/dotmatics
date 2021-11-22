@@ -1,5 +1,5 @@
 output "aab_instructions" {
-  value = <<INSTRUCTIONS
+  value       = <<INSTRUCTIONS
 Use the Hashiqube SSH output below to login to your instance
 To get Vault Shamir keys and Root token do "sudo cat /etc/vault/init.file"
 INSTRUCTIONS

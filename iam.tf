@@ -1,5 +1,5 @@
 resource "aws_iam_role" "hashiqube" {
-  name = "hashiqube"
+  name               = "hashiqube"
   assume_role_policy = <<EOF
 {
   "Version": "2012-10-17",
@@ -23,8 +23,8 @@ resource "aws_iam_instance_profile" "hashiqube" {
 }
 
 resource "aws_iam_role_policy" "hashiqube" {
-  name = "hashiqube"
-  role = aws_iam_role.hashiqube.id
+  name   = "hashiqube"
+  role   = aws_iam_role.hashiqube.id
   policy = <<EOF
 {
   "Version": "2012-10-17",
