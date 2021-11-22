@@ -4,7 +4,7 @@ terraform {
     organization = "dotmatics"
 
     workspaces {
-      name = "aws-instance"
+      name = "demo"
     }
   }
   required_providers {
