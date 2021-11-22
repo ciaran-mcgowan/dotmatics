@@ -19,5 +19,4 @@ provider "aws" {}
 
 provider "aws" {
   alias      = "sandbox"
-  region     = var.region
 }
