@@ -39,10 +39,12 @@ variable "number_of_instances" {
   default = "1"
 }
 
-variable "region" {
-  type    = string
-  default = "eu-west-1"
-}
+variable "region" {}
+
+variable "subnet_id" {}
+
+variable "vpc_id" {}
+
 
 
 

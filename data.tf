@@ -18,14 +18,3 @@ data "template_file" "hashiqube" {
     VAULT_ENABLED    = true
   }
 }
-
-data "terraform_remote_state" "aws_sandbox" {
-  backend = "remote"
-  config = {
-    hostname     = "app.terraform.io"
-    organization = "sa-aws"
-    workspaces = {
-      name = "aws-networking-sandbox-eu-west-2"
-    }
-  }
-}

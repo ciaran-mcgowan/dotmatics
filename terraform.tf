@@ -14,9 +14,3 @@ terraform {
     }
   }
 }
-
-provider "aws" {}
-
-provider "aws" {
-  alias      = "sandbox"
-}

@@ -3,7 +3,7 @@ resource "aws_instance" "hashiqube" {
   instance_type          = var.aws_instance_type
   vpc_security_group_ids = [aws_security_group.hashiqube.id]
   key_name               = aws_key_pair.hashiqube.key_name
-  subnet_id              = data.terraform_remote_state.aws_sandbox.outputs.subnet_public_ids[0]
+  subnet_id              = var.subnet_id
   #user_data_base64    = base64gzip(data.template_file.hashiqube.rendered)
   iam_instance_profile = aws_iam_instance_profile.hashiqube.name
   tags = {
