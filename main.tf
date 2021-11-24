@@ -8,6 +8,7 @@ resource "aws_instance" "hashiqube" {
   iam_instance_profile = aws_iam_instance_profile.hashiqube.name
   tags = {
     Name = "hashiqube"
+    Department = "IT"
   }
 }
 
