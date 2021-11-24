@@ -9,6 +9,7 @@ resource "aws_instance" "hashiqube" {
   tags = {
     Name = "hashiqube"
     Department = "IT"
+    Billable = "yes"
   }
 }
 
